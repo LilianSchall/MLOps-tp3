@@ -4,7 +4,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-COPY ./reco.joblib ./regression.joblib ./wsgi.py .
+COPY ./wsgi.py .
 COPY ./server/ ./server
 EXPOSE 8000
 
