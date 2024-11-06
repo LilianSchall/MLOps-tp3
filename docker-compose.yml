@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  lilian-house-predict:
+    image: "s3l4h/mlops-tp1:main"
+    container_name: "lilian-house-predict"
+    ports:
+      - "8765:8000"
